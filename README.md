@@ -20,11 +20,11 @@ About time, right? Okay... First, download our package. Install it. Got that? Go
 
 Now, in place of your 'useState' hook, use our 'useStore'! But hold on... It doesn't work EXACTLY like the 'useState' hook... The syntax is a little different. (THIS IS THE CURRENT ITERATION, EVERYTHING IS SUBJECT TO CHANGE) The 'useStore' hook allows for two inputs; the name of the state as a string, and the value of that state. If you include the value, it will assume you are attempting to alter the value, or add a new value if the input string does not exist as a piece of state in the global store. So, let's say we want to add a counter state that our counting component will alter. We would type the following:
 
-*__const count = useStore("counter", 0);__*
+*_const count = useStore("counter", 0);_*
 
 And bam! Just like that, a global piece of state is added to the global store. Wanna use it? Cool! the useStore provided us with the value that was either created or pulled out from the global store.
 
-Now if you modify that value, it'll update the global store and re-render!\*\* Where you do that is up to you. Wanna do it right in your component? Go for it! Wanna do it on a separate page? Go for it! Make a reducer page that will handle all the logic, pass it these values and alter them there. It's that easy!
+Now if you modify that value, it'll update the global store and re-render! Where you do that is up to you. Wanna do it right in your component? Go for it! Wanna do it on a separate page? Go for it! Make a reducer page that will handle all the logic, pass it these values and alter them there. It's that easy!
 
 **Oh my god! You guys are really changing the game... You could say that this really is The Future of State-management, Today!**
 Yeah. We know. Subsequently, if you happen to have work... We are all out of jobs.
@@ -33,6 +33,3 @@ Yeah. We know. Subsequently, if you happen to have work... We are all out of job
 You're welcome.
 
 \*other libraries may be able to accomplish something similar, however differently
-
-\*\*yeah I got no clue if this shit will actually work
-
