@@ -16,11 +16,11 @@ So, with that in mind, we chose to use hooks due to the ease of writing for a us
 **Okay, okay... So how do I get started?**
 About time, right? Okay... First, download our package. Install it. Got that? Good. Next up, write out some functional components you may use. Go on... You know how to do that, right? Here... Use this one.
 
-(simple adding counter)
+*_(simple adding counter)_*
 
 Now, in place of your 'useState' hook, use our 'useStore'! But hold on... It doesn't work EXACTLY like the 'useState' hook... The syntax is a little different. (THIS IS THE CURRENT ITERATION, EVERYTHING IS SUBJECT TO CHANGE) The 'useStore' hook allows for two inputs; the name of the state as a string, and the value of that state. If you include the value, it will assume you are attempting to alter the value, or add a new value if the input string does not exist as a piece of state in the global store. So, let's say we want to add a counter state that our counting component will alter. We would type the following:
 
-const count = useStore("counter", 0);
+*__const count = useStore("counter", 0);__*
 
 And bam! Just like that, a global piece of state is added to the global store. Wanna use it? Cool! the useStore provided us with the value that was either created or pulled out from the global store.
 
